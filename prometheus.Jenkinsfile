@@ -27,7 +27,7 @@ pipeline
             
             steps{
                    sh '''
-                   cd prometheus
+                   cd /opt/docker/prometheus/
                    docker-compose -f prometheus-compose.yml down | exit 0
                    docker-compose -f prometheus-compose.yml up -d
                    '''
