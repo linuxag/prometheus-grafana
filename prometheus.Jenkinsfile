@@ -16,7 +16,7 @@ pipeline
             steps{
                    sh '''
                    mkdir -p /opt/docker/prometheus /opt/docker/prometheus/conf
-                   cp prometheus/etc-prometheus.yml /opt/docker/prometheus/conf/prometheus.yml
+                   cp prometheus-grafana/etc-prometheus.yml /opt/docker/prometheus/conf/prometheus.yml
                    chmod -R 777 /opt/docker/prometheus/
                    '''
                }
